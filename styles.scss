@@ -1,0 +1,71 @@
+.letter {
+  border: 1px solid white;
+  width: 100px;
+height: 100px; 
+display: flex; 
+justify-content: center;
+align-items: center;
+visibility: hidden }
+
+.first-half, .second-half{
+  display: flex; 
+  // flex-direction: column; 
+  width: 60vw; 
+  justify-content: space-between;
+  // flex-wrap: wrap;
+}
+
+body {
+  // width: 100vw;
+  max-width: 100%; 
+  height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around; 
+  align-items: center; 
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+  color: white; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.word {
+  display: flex; 
+  justify-content: space-evenly;
+  width: 60vw;
+  font-size: 2rem;   
+}
+
+.game-container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.word-letter::after {
+  content: "";
+  width: 200px; 
+  height: 200px; 
+  background: white;
+}
+
+.game-outcome {
+  visibility: hidden;
+}
+
+.start-game {
+  border: 3px solid white; 
+  padding: 10px; 
+  border-radius: 15px; 
+  font-weight: bold; 
+  background: green;
+}
+
+.start-game:hover {
+  opacity: 0.9; 
+  transform: scale(1.1,1.1); 
+  cursor: pointer; 
+}
+
