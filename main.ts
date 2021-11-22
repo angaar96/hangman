@@ -39,7 +39,7 @@ const startGame = () => {
   let letterArr: Array<string> = [...wordLetters].map(span => span.innerHTML);
   console.log(letterArr); 
   // initialise number of lives and display it on the screen. 
-  let noOfLives = 5; 
+  let noOfLives = 9; 
   let gameData = document.querySelector(".game-data") as HTMLDivElement; 
   gameData.style.visibility = "visible"; 
   // on each key press we add an event listener to respond to the key guessed. 
